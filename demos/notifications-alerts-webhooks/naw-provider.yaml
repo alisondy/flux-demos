@@ -1,0 +1,13 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: naw-provider
+  namespace: flux-system
+spec:
+  channel: notifications-alerts-webhooks-example
+  secretRef:
+    name: discord-url
+  type: discord
+  username: notifications-alerts-webhooks-example-bot
+
